@@ -1,0 +1,19 @@
+{
+  "name": "react-profile",
+  "version": "1.0.0",
+  "description": "A beginners tutorial for creating a personal profile site that uses React. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filoxo/react-profile.git"
+  },
+  "author": "Carlos Filoteo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/filoxo/react-profile/issues"
+  },
+  "homepage": "https://github.com/filoxo/react-profile#readme"
+}
