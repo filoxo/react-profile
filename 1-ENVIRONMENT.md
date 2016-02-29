@@ -86,6 +86,12 @@ Now open `webpack.config.js` and copy in the following. Review the comments of t
       }
     };
     
+Next, we'll add an NPM script so we can start our project and dev server. In `package.json` replace the line inside the `scripts` node with:
+
+      "scripts": {
+        "start": "webpack-dev-server"
+      },
+      
 Now open `index.html` and it up using proper HTML, like so:
   
     <!DOCTYPE html>

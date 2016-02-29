@@ -4,7 +4,7 @@
   "description": "A beginners tutorial for creating a personal profile site that uses React. ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
