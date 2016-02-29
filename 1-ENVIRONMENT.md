@@ -21,7 +21,7 @@ Some of our packages will require that they be install _globally_, meaning that 
 
 In other documentation, you might find the above command written using a longer syntax. Here's what that would look like
 
-    npm install --global babel webpack webpack-dev-server
+    npm install --global webpack webpack-dev-server
 
 #### Install dependencies
 
@@ -31,7 +31,7 @@ Next we will install the dependencies that we will require for our app to run.
 
 Notice that I am still using the shorthand notation for these commands. Alternatively, you could type
 
-    npm install reaction react-dom --save
+    npm install react react-dom --save
 
 What does the `-S` or `--save` flag do? It stores the package name in `package.json` as a _dependency_, meaning that it is **required** for your app to run. 
 
@@ -39,7 +39,7 @@ What does the `-S` or `--save` flag do? It stores the package name in `package.j
 
 Let us install additional packages that we need in order to do our development; it will not be installed unless you specify that you need the development modules you've saved previously. That is only difference between the below command and the above. 
 
-    npm i babel-{cli, core,loader} babel-preset-{es2015,stage-0,react} -D
+    npm i babel-cli babel-core babel-loader babel-preset-es2015 babel-preset-react -D
     
 Which is shorthand for:
 
