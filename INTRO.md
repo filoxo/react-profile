@@ -14,7 +14,7 @@ Before we even get to a single line of code, let's try and understand what we ar
 
 ### React: what it is
 
-React is used for building _composable user interfaces_, or in other words UI components that are reusable. React is solely for creating views. React is just the **V** in [**MVC**](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller). 
+React is used for building _composable user interfaces_, or in other words UI components that are reusable. React is solely for creating views. React is just the **V** in [**MVC**](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller). Because of this, React components do not contain your application's state. 
 
 React is _declarative_ rather than _imperative_. For many beginning and intermediate developers, these terms may be new. I recommend that if you have time, dive deep into understanding the intricate differences. The extremely high-level summary is:
 
@@ -39,9 +39,9 @@ The developers of React noticed that it would be much better, easier, and perfor
 
 ## Webpack
 
-Now, all of this cannot run by itself. We still need something that will run  tasks as well as serve our files. We will do this by using [Webpack](https://webpack.github.io/), a module loader that will allow us to:
+Now, all of this cannot run by itself. We still need something that will run some tasks as well as serve our files. We will do this by using [Webpack](https://webpack.github.io/), a module loader that will allow us to:
  
- - Run Babel to transpile our code
+ - Run Babel to transform our code from ES6 to ES5
  - "Bundle" the files together into one file
  - Serve our files with a simple web server (called `webpack-dev-server`)
  

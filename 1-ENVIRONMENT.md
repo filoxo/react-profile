@@ -39,11 +39,11 @@ What does the `-S` or `--save` flag do? It stores the package name in `package.j
 
 Let us install additional packages that we need in order to do our development; it will not be installed unless you specify that you need the development modules you've saved previously. That is only difference between the below command and the above. 
 
-    npm i babel-cli babel-core babel-loader babel-preset-es2015 babel-preset-react -D
+    npm i babel-core babel-loader babel-preset-es2015 babel-preset-react -D
     
 Which is shorthand for:
 
-    npm install babel-loader babel-core babel-preset-2015 babel-preset-react --save-dev
+    npm install babel-core babel-loader babel-preset-2015 babel-preset-react --save-dev
     
 ### Create necessary files
 
@@ -97,8 +97,8 @@ Now open `index.html` and it up using proper HTML, like so:
     <!DOCTYPE html>
     <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <title>React Profile</title>
+        <meta charset="UTF-8">
+        <title>React Profile</title>
     </head>
     <body>
     
