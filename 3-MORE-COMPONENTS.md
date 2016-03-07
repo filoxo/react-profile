@@ -53,15 +53,15 @@ Now that we're passing that data to JobList, we need to make it aware of that da
 
 ### Using data in JobList
 
- now the jobless is been made aware of the actual list of jobs, we'll be up able to access that information through this.props.jobs.  our jobless component will simply aerate through the array and create job components. entering through this array is really easy  because we're using plain JavaScript. so open up the job list component file and inside the template, Underneath the subheading let's do exactly that
+Now that the joblist has been made aware of the actual list of jobs, we'll be up able to access that information through `this.props.jobs`.  Our joblist component will simply interate through the array and create `Job` components. Iterating through this array is really easy because we're using plain JavaScript. Open up the JobList component file. Inside the template and underneath the subheading, let's do exactly that
  
     {
         this.props.jobs.map(()=>{});
     }
     
- if you're unfamiliar with what the above map function does,  it is simply calling the function that we're passing into it on every single element of the array. this is how we are transforming every I am in the array into an actual job component.
+If you're unfamiliar with what the above `map()` function does, it is simply calling the function that we're passing into it on every single element of the array. This is how we are transforming every I am in the array into an actual job component.
  
-  we will be passing into parameters into the map callback. the first being the actual job data object and the second and index. then  we simply need will return a job component in the method body.
+We will be passing two parameters into the map callback. The first being the actual job data object and the second an index. Then we simply will return a `Job` component in the method body.
   
     {
         this.props.jobs.map((jobData, ndx)=>{
@@ -69,11 +69,11 @@ Now that we're passing that data to JobList, we need to make it aware of that da
         });
     }
     
- and that's it I template for the jobless component is complete. But we still need to create the actual job component.
+And that's it! The template for the JobList component is complete. But we still need to create the actual Job component.
  
- ### Stateless function component
+### Stateless function component
  
- The `Job` component is a good use case for a _stateless function component__. This is a simplified API for when a component can be a simple, pure function of the props passed to it; All they should ever do is transform the input. Let's see what this looks like an action.
+The `Job` component is a good use case for a _stateless function component__. This is a simplified API for when a component can be a simple, pure function of the props passed to it; All they should ever do is transform the input. Let's see what this looks like an action.
   
 -  Create a new file called `Job.js`
 -  This is still a React component so we need to `import React from 'react';` but **not** the `Component` object like you had done with all prior components
