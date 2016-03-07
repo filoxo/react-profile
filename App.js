@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import JobList from './Joblist';
 
 class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = { joblist: props.initialJoblist };
+	}
+	componentDidMount(){
+		axios.get('/joblist.json')
+			.then((response)=>{
+				this.setState({
+					joblist: response.data.jobs
+				});
+			})
+			.catch((error) => console.warn(error));
 	}
 	render(){
 		return (
