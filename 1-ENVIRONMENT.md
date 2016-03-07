@@ -2,10 +2,7 @@
 
 We'll now walk through each step in getting your development environment up and running correctly so you can begin to code. This is a somewhat lengthy process but it valuable for your learning. 
 
-A few things to note:
-- Code will be formatted for easy copy/paste
-
-Let's begin by creating a folder where all of your code resides. I called mine `react-profile/` and I will reference it as such in this project. 
+Let's begin by creating a folder where all of your code resides. I called mine `react-profile/` and I will reference it as the "project root" in this project. 
 
 Let us create your `npm` project using:
 

@@ -57,4 +57,4 @@ We will be using `npm` to manage all of these libraries together. NPM is Node.js
  
  # Let's begin. 
  
- Go to 1-Environment.md to get started. 
+ Go to 1-ENVIRONMENT.md to get started. 

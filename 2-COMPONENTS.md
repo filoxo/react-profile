@@ -1,9 +1,8 @@
 ## Create your first component
 
-Let us know open `App.js` in order to declare our first component. 
+Let us now open `App.js` in order to declare our first component. 
 
-1. First, we need to import React to be able to use it in this file, as well as a child method called Component. The braces around Component are an ES6 feature. This allows us to pull in the Component module directly, so its a shorthand for `React.Component`. This is simply to reduce the amount of characters you'd type.
-We are also pulling in the `render` 
+1. First, we need to import React to be able to use it in this file, as well as a child method called Component. The braces around Component are an ES6 feature. This allows us to pull in the Component module directly, so its a shorthand for `React.Component`. This is called [destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) and is an ES6 feature. We're using it here simply to reduce the amount of characters you'd type.
 
         import React, { Component } from 'react';
     
@@ -41,13 +40,13 @@ We have to now wire that Component to our HTML. We will do this in `main.js`.
         
         import App from './App';
 
-> Note: notice that we use the relative path to find `App`. This is because the only modules available from abolute paths are those that we installed using npm. That's why we can just pull in `react`. Remember this for all of your components. 
+> Note: notice that we use the relative path to find `App`. This is because the only modules available from absolute paths are those that we installed using npm. That's why we can just pull in `react`. Remember this for all of your components. 
 
 4. Lastly, we'll use `render()` to tell React to replace `div#app` with an `<App />` component.
 
         render(<App />, document.getElementById('app'));
         
-Now, run the dev server by typing this in your terminal:
+Now, run the dev server by typing this in a terminal:
 
     npm start
     
@@ -59,9 +58,7 @@ Congratulations! This is your first working component.
 
 ### Further develop your first component
 
-This first component is working, but we should do some more in order to make it meaningful and worthwhile. 
-
-We'll use [PureCSS](http://purecss.io/) and it's [Blog layout](http://purecss.io/layouts/blog/) to style our Profile. 
+This first component is working, but we should do some more in order to make it meaningful and worthwhile. We'll use [PureCSS](http://purecss.io/) and it's [Blog layout](http://purecss.io/layouts/blog/) to style our Profile. 
 
 #### Install Pure locally
 
