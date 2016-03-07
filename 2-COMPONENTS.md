@@ -180,4 +180,4 @@ Looking ahead, we will want:
 - Our JobList will take in an array of jobs and create Job components
 - All of this will be rendered on the page
 
-We'll tackle this in 3-MORE-COMPONENETS.md
+We'll tackle this in 3-MORE-COMPONENTS.md
